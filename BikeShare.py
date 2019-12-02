@@ -75,7 +75,7 @@ def load_data(city, month, day):
         months = ['january', 'february', 'march', 'april', 'may', 'june']
         month = months.index(month) + 1
 
-        # filter by month to create the new dataframe 
+        # filter by month to create the new dataframe
         df = df[df['month'] == month]
 
     # filter by day of week if applicable
@@ -97,9 +97,9 @@ def time_stats(df):
     print('Most Popular month:', popular_month)
 
     # display the most common day of week
-
     popular_day = df['day_of_week'].mode()[0]
     print('Most Popular day:', popular_day)
+
 
     # display the most common start hour
 
